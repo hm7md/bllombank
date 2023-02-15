@@ -11,7 +11,7 @@
 
   <body>
   <div class="container">
-    <h1 class="main-header">Account Application Form.</h1>
+    <h1 class="main-header">Account Application Form</h1>
     <hr>
     <form id="app-form" action="">
     <fieldset class="sub-container" id="basic-details">
@@ -53,6 +53,13 @@
         <label for="Password" class="standard-label">
             password<span class="required">*</span>
             <input class="standard-input" id="password" type="password" placeholder="type your password" required>
+            <div id="message">
+              <h3>password must contain the following</h3>
+              <p id="letter" class="invalid">A <b> lowercase </b> letter </p>
+              <p id="capital" class="invalid">A <b> capital (uppercase) </b> letter </p>
+              <p id="number" class="invalid">A <b> number </b> </p>
+              <p id="length" class="invalid"> minimum <b> 8 character </b> </p>
+            </div>
         </label>
         <label for="DOB" class="standard-label">
           Date of Birth<span class="required">*</span>
@@ -156,7 +163,9 @@
         <input id="submit-app" type="submit" name="submit" value="Submit Application" onclick="logValues()">
       </fieldset>
     </form>
+    <button type="submit" class="btn btn-success">Submit</button>
+    
   </div>
-  <script src="signup.js" </script>
+  <script src="../scripts/signup.js"> </script>
 </body>
 </html>

@@ -10,6 +10,42 @@ body {
       display: block;
   }
   
+  #message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 12px;
+  }
+  
+  /* Add a BROWN text color and a checkmark when the requirements are right */
+  .valid {
+    color: rgb(128, 77, 0);
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+   
+  }
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    
+  }
+
   .standard-label {
     margin-bottom: 20px;
   }
@@ -90,36 +126,36 @@ body {
   }
   
   #show-address {
-    display: none;
+    
     float: right;
   }
   
   #address-history {
-    display: none;
+    ;
   }
   
-  #non-uk {
-    display: none;
+  #non-uae{
+   ;
     text-align: center;
     font-size: 25px;
     color: red;
   }
   
   #current-address {
-    display: none;
+   
   }
   
   #previous-address {
-    display: none;
+    
   }
   
   #get-consent {
-    display: none;
+  
     float: right;
   }
   
   #your-consent {
-    display: none;
+  ;
   }
   
   #info-request {
@@ -127,8 +163,8 @@ body {
   }
   
   #submit-app {
-    display: none;
-    border: 2px black solid;
+   
+    border: 2px rgb(85, 51, 51) solid;
     background-color:;
     border-radius: 5px;
     margin: 15px auto;
@@ -157,6 +193,41 @@ body {
     }
     .container {
       width: 95%;
+    }
+    #message {
+      display:none;
+      background: #f1f1f1;
+      color: #000;
+      position: relative;
+      padding: 20px;
+      margin-top: 10px;
+    }
+    
+    #message p {
+      padding: 10px 35px;
+      font-size: 18px;
+    }
+    
+    /* Add a green text color and a checkmark when the requirements are right */
+    .valid {
+      color: green;
+    }
+    
+    .valid:before {
+      position: relative;
+      left: -35px;
+      content: "&#10004;";
+    }
+    
+    /* Add a red text color and an "x" icon when the requirements are wrong */
+    .invalid {
+      color: red;
+    }
+    
+    .invalid:before {
+      position: relative;
+      left: -35px;
+      content: "&#10006;";
     }
   }
   
